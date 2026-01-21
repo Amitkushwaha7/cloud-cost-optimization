@@ -1,0 +1,54 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:DescribeInstances",
+				"ec2:StartInstances",
+				"ec2:StopInstances"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"cloudwatch:GetMetricStatistics"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"logs:CreateLogGroup",
+				"logs:CreateLogStream",
+				"logs:PutLogEvents"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"lambda:UpdateFunctionConfiguration",
+				"lambda:GetFunctionConfiguration",
+				"lambda:ListFunctions",
+				"lambda:PublishLayerVersion"
+			],
+			"Resource": "*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"dynamodb:PutItem",
+				"dynamodb:Query",
+				"dynamodb:Scan",
+				"dynamodb:DescribeTable",
+				"sns:Publish",
+				"ec2:DescribeInstances",
+				"ec2:StopInstances",
+				"cloudwatch:GetMetricStatistics"
+			],
+			"Resource": "*"
+		}
+	]
+}
